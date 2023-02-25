@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5;
+}
+
+body {
+  position: relative;
+  height: 100vh;
+  background: linear-gradient(to bottom right, #e66465, #9198e5);
+  padding: 0 1rem;
+}
+
+main {
+  position: absolute;
+  width: 60rem;
+  height: 30rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  overflow: hidden;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+}
+
+.player {
+  width: 50%;
+  text-align: center;
+  padding: 4rem 10rem;
+
+  background-color: rgba(255, 255, 255, 0.263);
+}
+
+.player h1 {
+  margin-bottom: 2rem;
+}
+
+.player .final-score {
+  color: red;
+  font-size: 3rem;
+}
+
+.active {
+  background-color: rgba(255, 255, 255, 0.534);
+}
+
+.red-sq {
+  background-color: red;
+  width: 100%;
+  padding: 2rem;
+
+  border-radius: 5px;
+  margin-top: 8rem;
+}
+.red-sq p {
+  color: white;
+}
+
+button {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
+  cursor: pointer;
+  border-radius: 99rem;
+
+  transition: all 0.3s;
+}
+
+.newGameBtn {
+  top: 10%;
+  border: none;
+  padding: 1rem 2rem;
+  box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.245);
+}
+
+.newGameBtn:hover {
+  background: linear-gradient(to top, rgb(255, 255, 0), rgba(0, 128, 0, 0.483));
+  color: white;
+}
+
+.rollDiceBtn {
+  top: 60%;
+  border: none;
+  padding: 1rem 2rem;
+  box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.245);
+}
+
+.rollDiceBtn:hover {
+  background: linear-gradient(to top, blue, rgba(255, 0, 0, 0.487));
+  color: white;
+}
+
+.holdBtn {
+  top: 80%;
+  border: none;
+  padding: 1rem 2rem;
+  box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.245);
+}
+
+.holdBtn:hover {
+  background: linear-gradient(to top, orange, rgba(255, 0, 0, 0.476));
+  color: white;
+}
+
+.dice-img {
+  position: absolute;
+  width: 11%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 27%;
+}
+
+.win {
+  background: linear-gradient(to right, purple, red);
+  color: white;
+}
+.win .final-score {
+  color: green;
+}
+
+.hidden {
+  display: none;
+}
